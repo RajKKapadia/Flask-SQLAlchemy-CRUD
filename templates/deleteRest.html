@@ -1,0 +1,15 @@
+<html>
+<body>
+
+  <h2>Are you sure?</h2>
+  <h2>{{restaurant.name}} will be deleted from the records.</h2>
+
+  <form action="{{url_for("deleteRest", rid=restaurant.id,)}}" method="POST">
+
+    <input type="submit" value="Delete">
+    <a href="{{url_for("home")}}">Cancel</a>
+
+  </form>
+
+</body>
+</html>

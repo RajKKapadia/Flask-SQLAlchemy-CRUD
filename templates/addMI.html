@@ -1,0 +1,20 @@
+<html>
+<body>
+
+  <h2>Add New Menu Item</h2>
+
+  <form action="{{url_for("addMenuItems", rid=rid)}}" method="POST">
+
+    <p>Name:</p>
+    <input type="text" name="name">
+    <p>Price:</p>
+    <input type="text" name="price">
+    <p>Description:</p>
+    <input type="text" name="description">
+    <input type="submit" value="Create">
+    <a href="{{url_for("showMenuItems", rid=rid)}}">Cancel</a>
+
+  </form>
+
+</body>
+</html>
